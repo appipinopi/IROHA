@@ -1,0 +1,10 @@
+# Generated build outputs and downloaded source data
+/build/
+/unidic-source/
+*.sqlite3
+*.db
+__pycache__/
+*.py[cod]
+
+# Private/unreviewed contributor source notes; provide a completed SOURCES.txt only when ready
+/contributions/SOURCES.txt

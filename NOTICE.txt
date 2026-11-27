@@ -1,0 +1,21 @@
+出典・ライセンス表示
+====================
+
+本IME辞書は、現代書き言葉UniDic 2025-12 フル配布物に含まれる lex.csv を選別・変換して作成しました。
+
+出典: https://clrd.ninjal.ac.jp/unidic_archive/2512/unidic-cwj-202512_full.zip
+公式バージョン一覧: https://clrd.ninjal.ac.jp/unidic/back_number.html
+UniDicライセンス案内: https://clrd.ninjal.ac.jp/unidic/copying/BSD
+
+元データの著作権表示:
+Copyright (c) 2023 National Institute for Japanese Language and Linguistics
+国立国語研究所（言語資源開発センター／「語彙資源」プロジェクト／「BCCWJ2」プロジェクト）
+
+元データは、配布物に同梱された修正BSDライセンス（LICENSE-BSD.txt）に基づいて再配布しています。ライセンス本文の著作権表示・条件・免責を保持してください。ライセンス本文の条件に従い、権利者・貢献者の名称を、事前の書面許可なく派生製品の推奨・宣伝に使用しないでください。ライセンスは商用利用および再配布を許可します。
+
+加工内容: UniDicの基底表記 orthBase を使用し、orth と orthBase が一致する基底形のみを採用しました。ひらがな・カタカナのみの表記はひらがな化し、それ以外はソースの lForm と発音 pron を読み候補として使用、カタカナはひらがなへ変換しました。句読記号・絵文字などを含む表記や読み、表記または読みのかな列の途中に単独で入り込んだ別種のかな表記を除外し、表記・読み・品詞が同一の重複は統合して最も低い元コストを採用しました。出典情報は個々の辞書行・SQLiteレコードには付加していません。
+
+本辞書はUniDicの派生物であり、UniDicまたは国立国語研究所による推奨・承認を示すものではありません。
+
+元CSV（lex.csv）のSHA-256:
+bd00a695ba897a3250965257341e1929ae062dfa2e63b223a05bcc02f22e74a2

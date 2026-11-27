@@ -1,0 +1,62 @@
+{
+  "dictionary": "UniDic Japanese IME Dictionary",
+  "source_version": "2025-12",
+  "source_archive": "https://clrd.ninjal.ac.jp/unidic_archive/2512/unidic-cwj-202512_full.zip",
+  "source_file": "lex.csv",
+  "source_file_sha256": "bd00a695ba897a3250965257341e1929ae062dfa2e63b223a05bcc02f22e74a2",
+  "source_license": "Modified BSD; see LICENSE-BSD.txt and NOTICE.txt",
+  "schema": [
+    "surface",
+    "reading",
+    "pos",
+    "cost"
+  ],
+  "text_encoding": "UTF-8",
+  "text_delimiter": "TAB",
+  "record_count": 456209,
+  "source_stats": {
+    "source_records": 1027505,
+    "canonical_source_records": 429647,
+    "accepted_reading_entries_before_deduplication": 509833,
+    "duplicate_records_collapsed": 53624,
+    "unique_records": 456209,
+    "rejected_by_reason": {
+      "embedded_whitespace": 19,
+      "intrusive_mixed_kana": 168,
+      "missing_or_non_kana_reading": 194,
+      "missing_surface": 2,
+      "noncanonical_or_inflected_form": 593714,
+      "unsupported_surface_punctuation_or_symbol": 3761
+    }
+  },
+  "sqlite": {
+    "file": "dictionary.sqlite3",
+    "table": "entries",
+    "columns": [
+      "surface TEXT",
+      "reading TEXT",
+      "pos TEXT",
+      "cost INTEGER"
+    ],
+    "indexes": [
+      "PRIMARY KEY(reading, surface, pos)",
+      "idx_reading_cost_surface",
+      "idx_surface"
+    ],
+    "row_count": 456209
+  },
+  "tsv_shards": [
+    "tsv/dictionary-001.tsv",
+    "tsv/dictionary-002.tsv"
+  ],
+  "transforms": [
+    "canonical orthBase entries only where orth equals orthBase; inflected/noncanonical forms excluded",
+    "kana-only spellings converted directly to hiragana; other readings from lForm and pron converted from katakana",
+    "unsupported punctuation and symbols excluded from surface forms and readings",
+    "a single intrusive kana character from the other kana script inside a surface or source reading kana run excluded",
+    "POS levels 1-4 joined by slash; missing levels omitted",
+    "exact (surface, reading, POS) duplicates collapsed; lowest source cost retained",
+    "records without usable fields, with whitespace, or over configured length limits omitted"
+  ],
+  "generated_utc": "2026-11-27T12:46:30.611445+00:00"
+}
