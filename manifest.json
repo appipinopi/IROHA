@@ -1,0 +1,93 @@
+{
+  "source_entries": 219275,
+  "lexical_pairs": 398090,
+  "inflection_candidates": 1167534,
+  "aux_compound_candidates": 8187568,
+  "suru_compound_candidates": 19508,
+  "proper_name_candidates": 745550,
+  "name_source_entries": 743692,
+  "unique_candidates": 10470706,
+  "output_rows": 6000000,
+  "selected_kind_counts": {
+    "lexical": 396540,
+    "proper_name": 744140,
+    "suru_compound": 19481,
+    "inflection": 1160705,
+    "auxiliary_compound": 3679134
+  },
+  "tsv_shards": [
+    "dictionary-001.tsv",
+    "dictionary-002.tsv",
+    "dictionary-003.tsv",
+    "dictionary-004.tsv",
+    "dictionary-005.tsv",
+    "dictionary-006.tsv"
+  ],
+  "sources": [
+    {
+      "name": "JMdict",
+      "file": "JMdict.gz",
+      "url": "https://www.edrdg.org/pub/Nihongo/JMdict.gz",
+      "last_modified_utc": "2026-11-27T03:30:28Z",
+      "file_bytes": 22243798,
+      "sha256": "47379c28c4bc1f52d367da4e9f5eaf0515ff6a1f635574c998574d2727130984",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://www.edrdg.org/edrdg/licence.html"
+    },
+    {
+      "name": "JMnedict",
+      "file": "JMnedict.xml.gz",
+      "url": "https://www.edrdg.org/pub/Nihongo/JMnedict.xml.gz",
+      "last_modified_utc": "2026-11-27T03:30:02Z",
+      "file_bytes": 12448777,
+      "sha256": "1aadbc259bbd15d5431b795dc7bcaa23bd52fbb5dae46d3a88597ca35da51d3e",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://www.edrdg.org/edrdg/licence.html"
+    }
+  ],
+  "license_url": "https://www.edrdg.org/edrdg/licence.html",
+  "data_schema": [
+    "reading",
+    "left_id",
+    "right_id",
+    "cost",
+    "surface"
+  ],
+  "id_policy": "IROHA-local POS-class IDs; not compatible with Mozc IDs",
+  "cost_policy": "IROHA-local heuristic, lower values rank earlier; no source dictionary costs imported",
+  "generated_utc": "2026-11-27T14:01:09.749721+00:00",
+  "package_version": "2026-11-27",
+  "data_license": "CC BY-SA 4.0",
+  "data_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "code_license": "MIT; see LICENSE-MIT.txt",
+  "source_attribution": "JMdict and JMnedict, copyright EDRDG; see NOTICE.txt",
+  "public_distribution": "Free download by IROHA; CC BY-SA 4.0 does not prohibit downstream commercial use when its terms are met.",
+  "candidate_selection_policy": "Selected the top 6,000,000 unique rows from 10,470,706 candidates. Selection order prioritizes lexical rows, proper names and productive suru forms, then regular inflections and one-auxiliary compounds. Within each class, ranking uses source priority tags and IROHA-local heuristics. No double-auxiliary fallback was used.",
+  "verified_row_counts": {
+    "tsv_total": 6000000,
+    "sqlite_total": 6000000,
+    "tsv_shards": {
+      "dictionary-001.tsv": 1000000,
+      "dictionary-002.tsv": 1000000,
+      "dictionary-003.tsv": 1000000,
+      "dictionary-004.tsv": 1000000,
+      "dictionary-005.tsv": 1000000,
+      "dictionary-006.tsv": 1000000
+    },
+    "tsv_unique_rows": 6000000
+  },
+  "release_contents": [
+    "TSV shards",
+    "SQLite database",
+    "JMdict and JMnedict source snapshots",
+    "build_iroha.py",
+    "fetch_sources.py",
+    "NOTICE.txt",
+    "LICENSE-DATA.md",
+    "LICENSE-MIT.txt",
+    "licenses/CC-BY-SA-4.0.txt"
+  ],
+  "verified_files": 18,
+  "checksum_file": "SHA256SUMS.txt",
+  "checksum_entries": 17
+}

@@ -1,0 +1,26 @@
+IROHA 日本語IME辞書 — 出典と権利表示
+
+この配布物には、Electronic Dictionary Research and Development Group (EDRDG) が作成・管理する JMdict および JMnedict のデータが含まれます。元データの著作権はEDRDG等の各権利者に帰属します。JMdict/JMnedictおよび本配布物に含まれる派生辞書データは、CC BY-SA 4.0の条件で配布します。
+
+本配布物は元ファイルをIME辞書向けに変換し、JMdictの品詞情報に基づく活用形、補助動詞との結合形、IROHA独自の品詞クラスIDおよびコストを追加しています。Mozcの辞書語彙・接続ID・コストおよびUniDic由来データは使用していません。変換・生成内容と件数は manifest.json、再生成コードは build_iroha.py を参照してください。
+
+必須の出典表示:
+
+> This IROHA dictionary contains adapted data from JMdict and JMnedict, copyright the Electronic Dictionary Research and Development Group (EDRDG), and is licensed under CC BY-SA 4.0. The IROHA release adds generated inflectional and auxiliary-combination forms and IROHA-local categories and costs. EDRDG does not endorse this project.
+
+日本語:
+
+> 本IROHA辞書は、Electronic Dictionary Research and Development Group（EDRDG）著作権のJMdictおよびJMnedictを加工したデータを含みます。辞書データはCC BY-SA 4.0で公開します。IROHA版では活用形・補助動詞結合の生成、IROHA独自の品詞ID・コスト付与を行っています。EDRDGによる推奨・承認を示すものではありません。
+
+出典・ライセンス:
+- JMdict / EDRDG ライセンス: https://www.edrdg.org/edrdg/licence.html
+- JMnedict / ENAMDICT 説明: https://www.edrdg.org/enamdict/enamdict_doc.html
+- JMdict原ファイル: https://www.edrdg.org/pub/Nihongo/JMdict.gz
+- JMnedict原ファイル: https://www.edrdg.org/pub/Nihongo/JMnedict.xml.gz
+- CC BY-SA 4.0 ライセンス概要: https://creativecommons.org/licenses/by-sa/4.0/
+- CC BY-SA 4.0 法的条文: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+配布上の注意:
+- 配布アーカイブに含まれる元データのコピー、出典表示、ライセンス案内を削除しないでください。
+- CC BY-SA 4.0は、表示・継承条件を満たす改変・再配布を認め、商用利用も禁止しません。IROHAプロジェクトはこの配布を無料で提供しますが、ライセンスにより第三者の商用利用まで禁止するものではありません。
+- EDRDGは本プロジェクトを推奨・承認していません。

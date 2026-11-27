@@ -1,0 +1,12 @@
+# Generated datasets and build outputs (distributed as release assets)
+source/
+sources/
+build/
+work/
+*.tsv
+*.sqlite
+*.sqlite3
+*.db
+*.zip
+*.gz
+__pycache__/
