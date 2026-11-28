@@ -1,0 +1,6 @@
+Wikidata Lexeme structured data
+License: Creative Commons CC0 1.0 Universal
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Data source: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.json.gz
+Lexicographical data documentation: https://www.wikidata.org/wiki/Wikidata:Lexicographical_data
+The filtered Japanese Lexeme snapshot and row-level entity IDs are included in this package.

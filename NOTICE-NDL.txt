@@ -1,0 +1,15 @@
+NDL Web NDL Authorities データの出典表示・利用条件
+
+このIROHA配布物には、国立国会図書館（NDL）が公開するWeb NDL Authoritiesの公式データから選定・加工した主題標目（NDLSH）およびジャンル/形式用語（NDLGFT）が含まれます。NDLの公式条件は、Web NDL Authoritiesのデータを営利・非営利の活動で事前申請なく再利用できるとし、公開する成果物にはデータをWeb NDL Authoritiesから取得したことを表示するよう求めています。
+
+出典表示:
+
+> Data obtained from Web NDL Authorities (National Diet Library, Japan): NDLSH and NDLGFT. https://id.ndl.go.jp/information/download_en/
+
+日本語:
+
+> 出典: 国立国会図書館 Web NDL Authorities（NDLSH、NDLGFT）。https://id.ndl.go.jp/information/download_en/
+
+変更内容: 公式カタカナ転写の語間スペースを除去し、かなをひらがなへ正規化しました。`--`区分、注記括弧・注記付き見出し、カタカナ以外を含む読みを除外し、既存の辞書行との完全一致を削除しました。品詞ID 1（IROHA独自noun）とコスト2,500を割り当てました。語形生成はしていません。項目別のNDL ID・元見出し・読み・出典欄・行番号・原アーカイブSHA-256は `NDL-ATTRIBUTION.tsv` に記録しています。
+
+NDLの利用条件: https://id.ndl.go.jp/information/use_en/ 。公式ページは別個のSPDXライセンス名を指定していないため、このデータ部分にCC BY等のライセンス名を付与したとは主張しません。NDLの条件および出典表示をこの再利用条件の記録とともに保持してください。NDLはこのプロジェクトを推奨・承認していません。

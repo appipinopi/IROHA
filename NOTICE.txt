@@ -1,6 +1,6 @@
 IROHA 日本語IME辞書 — 出典と権利表示
 
-この配布物には、Electronic Dictionary Research and Development Group (EDRDG) が作成・管理する JMdict および JMnedict のデータが含まれます。元データの著作権はEDRDG等の各権利者に帰属します。JMdict/JMnedictおよび本配布物に含まれる派生辞書データは、CC BY-SA 4.0の条件で配布します。
+この配布物には、Electronic Dictionary Research and Development Group (EDRDG) が作成・管理する JMdict および JMnedict のデータが含まれます。元データの著作権はEDRDG等の各権利者に帰属し、JMdict/JMnedict由来部分はCC BY-SA 4.0の条件で配布します。他のソース由来部分には別ライセンス条件が適用されます。
 
 本配布物は元ファイルをIME辞書向けに変換し、JMdictの品詞情報に基づく活用形、補助動詞との結合形、IROHA独自の品詞クラスIDおよびコストを追加しています。Mozcの辞書語彙・接続ID・コストおよびUniDic由来データは使用していません。変換・生成内容と件数は manifest.json、再生成コードは build_iroha.py を参照してください。
 
@@ -24,3 +24,45 @@ IROHA 日本語IME辞書 — 出典と権利表示
 - 配布アーカイブに含まれる元データのコピー、出典表示、ライセンス案内を削除しないでください。
 - CC BY-SA 4.0は、表示・継承条件を満たす改変・再配布を認め、商用利用も禁止しません。IROHAプロジェクトはこの配布を無料で提供しますが、ライセンスにより第三者の商用利用まで禁止するものではありません。
 - EDRDGは本プロジェクトを推奨・承認していません。
+
+
+日本語WordNet v2.1の表記・読み・品詞データを追加しています。変換と活用生成の詳細はREADME.mdおよびmanifest.jsonを参照してください。著作権表示・免責事項はlicenses/LICENSE-WORDNET.txtに全文を保持しています。出典: https://github.com/bond-lab/wnja/releases/tag/v2.1
+WordNet由来の各追加行と元XML内のLexicalEntry ID・語形・品詞・読み・生成種別はWORDNET-ATTRIBUTION.tsvに記録しています。
+
+
+この辞書は英語版Wiktionaryの日本語名詞項目から、明示された単一のかな転写を選定して追加しています。Wiktionary contributorsへの項目別帰属URLはWIKTIONARY-ATTRIBUTION.tsvに記録しました。元データ: https://kaikki.org/dictionary/rawdata.html。ライセンス: CC BY-SA 4.0/GFDL。語義・例文は複製していません。
+
+
+この配布物には、英語版Wiktionaryの日本語エントリーから明示読み付きの複数品詞・語形を選択して追加しています。追加行 73,217 行の項目別出典URLはWIKTIONARY-ATTRIBUTION-EXPANDED.tsvに記録しました。活用形と一補助動詞結合はIROHA独自規則で生成したものです。語義・例文は複製していません。抽出元: https://kaikki.org/dictionary/rawdata.html。ライセンス: CC BY-SA 4.0/GFDL。
+
+
+この配布物にはNAIST-JDIC 0.6.3.b-20111013由来の表記・読み・品詞と、IROHA規則で生成した語形が含まれます。動詞・形容詞の非基本形語幹は単独候補として取り込んでいません。権利者: Nara Institute of Science and Technology, Japan. Copyright (c) 2009. ライセンス: BSD-3-Clause。著作権表示・条件・免責全文は `licenses/LICENSE-NAIST-JDIC.txt` にあります。ソース: https://deb.debian.org/debian/pool/main/m/mecab-naist-jdic/mecab-naist-jdic_0.6.3.b-20111013.orig.tar.gz。Debian著作権記録: https://metadata.ftp-master.debian.org/changelogs//main/m/mecab-naist-jdic/mecab-naist-jdic_0.6.3.b-20111013-11_copyright。NAIST-JDICはIPADICを基にした辞書ですが、本配布物ではNAIST-JDICのBSDライセンス下のCSVだけを取り込み、UniDic由来ファイルは使っていません。NAISTまたは関係者による本プロジェクトの推奨・承認を示すものではありません。
+
+
+Wikidata Lexeme namespace の日本語構造化データを追加しています。元データはCC0 1.0です。各行のLexeme IDと公式スナップショット情報はWIKIDATA-ATTRIBUTION.tsvおよびsource/wikidata-dump-metadata.jsonに記録しています。出典: https://dumps.wikimedia.org/wikidatawiki/entities/latest-lexemes.json.gz。Wikimedia/Wikidataとの提携・承認を示すものではありません。
+
+
+Wiktionaryの単一読み明示サブセットを、名詞に加えて動詞・形容詞・固有名詞等へ拡張しました。明示読み・品詞・canonical表記に基づく選定方針と追加件数はREADME.mdおよびmanifest.jsonを参照してください。各辞書行の帰属URLはWIKTIONARY-ATTRIBUTION.tsvに記録しています。出典: https://kaikki.org/dictionary/rawdata.html; https://kaikki.org/dictionary/Japanese/index.html; https://en.wiktionary.org/wiki/Wiktionary:Copyrights。
+
+
+This distribution contains selected and adapted entries from the National Institute for Japanese Language and Linguistics (NINJAL), Database of Basic Vocabulary in Education (Version 2009B), from National Institute for Japanese Language and Linguistics Report 127 (2009). The source CSV is at https://mmsrv.ninjal.ac.jp/brfvep/kyoikukihongoi_2009B.csv; the official dataset page is https://mmsrv.ninjal.ac.jp/brfvep/. The source database is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/. Included source file: source/ninjal_kyoikukihongoi_2009B.csv. Adaptations include kana normalization, a conservative spelling-selection/fallback policy, IROHA-local POS IDs and costs, and generated modern inflections and suru compounds. Row-level source references are in NINJAL-ATTRIBUTION.tsv. NINJAL does not endorse this project.
+
+
+This distribution contains selected and adapted entries from the National Institute for Japanese Language and Linguistics (NINJAL), *Database of Basic Vocabulary in Japanese Language Education*, from National Institute for Japanese Language and Linguistics Report 127 (2009). The six-list comparison CSV is at https://mmsrv.ninjal.ac.jp/brfvep/rokusyutaisyo.csv; the official dataset page is https://mmsrv.ninjal.ac.jp/brfvep/. The source database is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/. Included source file: source/ninjal_rokushutaisho_2009.csv. Adaptations include kana normalization, conservative spelling selection/fallback, reviewed POS mapping, IROHA-local IDs and costs, and selected generated modern forms. The six source-membership marker columns and source costs are not used in dictionary entries. Row-level source references are in NINJAL-JP-EDU-ATTRIBUTION.tsv. NINJAL does not endorse this project.
+
+For the component-by-component source, attribution, and license-text mapping, see LICENSE-INDEX.md. Full CC BY-SA 4.0, CC BY 4.0, CC0 1.0, and GFDL 1.3 license texts are included under licenses/; separate Japanese WordNet, NAIST-JDIC, and MIT terms are also retained.
+
+
+This distribution contains selected and adapted entries from MeCab's IPA dictionary, IPADIC 2.7.0-20070801. The official source archive is `source/mecab-ipadic-2.7.0-20070801.tar.gz` (SHA-256 `b62f527d881c504576baed9c6ef6561554658b175ce6ae0096a60307e49e3523`), obtained from https://sourceforge.net/projects/mecab/files/mecab-ipadic/2.7.0-20070801/mecab-ipadic-2.7.0-20070801.tar.gz/download. The upstream COPYING file is retained in full at `licenses/LICENSE-IPADIC.txt` and in the source archive. Debian identifies the complete terms as `BSD-3-Clause-with-ICOT-term`: they include NAIST's copyright/permission/disclaimer and the ICOT Free Software `NO WARRANTY` terms. The full text must remain attached to every redistribution. Selected fields are surface, explicit reading, reviewed POS and inflection metadata; source rows whose spellings conflict with base readings, proper-noun POS rows, and Latin-letter surfaces are excluded. Generated candidates whose spelling conflicts with base readings are also excluded; contracted causative-passive forms are not generated for five-row s-verbs. Source IDs, costs, pronunciation, and runtime code are not included. Row-level references are in `IPADIC-ATTRIBUTION.tsv`. No endorsement by NAIST, ICOT, or MeCab is implied.
+
+
+This distribution contains selected and adapted data from the JST Thesaurus (2015 edition) MeCab user-dictionary dataset, *MeCab user dictionary for science technology term*, published by the National Bioscience Database Center (NBDC), Japan Science and Technology Agency. The official NBDC README states that the dataset is licensed under CC BY-SA 4.0 and requires this credit: “科学技術用語形態素解析辞書 © バイオサイエンスデータベースセンター licensed under CC表示-継承4.0 国際”. Official source archive: https://dbarchive.biosciencedbc.jp/data/mecab/LATEST/mecab_thesaurus.zip; official README: https://dbarchive.biosciencedbc.jp/data/mecab/LATEST/README.html. Included files: source/jst-thesaurus/mecab_thesaurus.zip and source/jst-thesaurus/NBDC-README.html. Selected primary terms and a narrowly filtered kana-synonym subset are included; IROHA-local suru forms were generated. The upstream description states that these MeCab dictionary entries are based on the IPA dictionary; no source connection IDs, costs, or source tags are carried into IROHA dictionary rows, and no MeCab runtime is required. Row-level references are in JST-ATTRIBUTION.tsv. The full CC BY-SA 4.0 legal code and the required credit are retained. NBDC/JST does not endorse this project.
+The complete IPADIC upstream COPYING text is retained at `licenses/LICENSE-IPADIC.txt` to document this source lineage; this is in addition to, and does not replace, the NBDC CC BY-SA 4.0 notice and required credit.
+
+
+This distribution contains selected and adapted data from the National Institute for Japanese Language and Linguistics (NINJAL), *Vocabulary List of the 2 Million-Character Survey of Contemporary Magazines* (public version 1.0, released 2006-08-11; based on a survey of 70 monthly magazines published in 1994). NINJAL's official page states that the data is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0): https://mmsrv.ninjal.ac.jp/mag200/. The included source archive is source/ninjal-magazines/Zasshi200.zip (SHA-256 72af1363c43f0a8104726a9b4190153f04a02015cbad222c378434041f286c3f); its copyright/use notice is preserved at licenses/LICENSE-NINJAL-MAG200.txt. The selected written form was required to appear verbatim at least twice in the source's observed-form list. 2,124 new dictionary rows were added; no inflections were generated. NINJAL describes the source readings as approximate, so reading accuracy is not guaranteed. IROHA assigned local POS IDs and costs; source IDs and costs are not included in dictionary rows. Row-level source references, frequency, magazine count, observed forms, and source-line information are in NINJAL-MAGAZINES-ATTRIBUTION.tsv. NINJAL does not endorse this project.
+
+
+日本郵便の住所の郵便番号データを選定して収録しています。日本郵便の[公式説明・利用条件](https://www.post.japanpost.jp/service/search/zipcode/download/utf-readme.html)は、郵便番号データについて著作権を主張せず自由に配布できると明記しています。正式な別ライセンス名は主張せず、この条件と原本を `licenses/NOTICE-JAPAN-POST.txt` および `source/japanpost/` に保持しています。個別レコードの出典対応は `JAPAN-POST-ATTRIBUTION.tsv` にあります。
+
+This distribution contains selected and adapted subject headings (NDLSH) and genre/form terms (NDLGFT) obtained from Web NDL Authorities, National Diet Library, Japan. The official Terms of Use permit reuse for profit or non-profit without prior application and request attribution to Web NDL Authorities: https://id.ndl.go.jp/information/use_en/. Required source statement and IROHA changes are documented in `NOTICE-NDL.txt`; official data snapshots and the source terms are in `source/ndl/`; row-level IDs and provenance are in `NDL-ATTRIBUTION.tsv`. No separate SPDX license is asserted for this component. The National Diet Library does not endorse this project.

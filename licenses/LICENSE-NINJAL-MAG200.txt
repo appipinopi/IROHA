@@ -1,0 +1,10 @@
+著作権及び使用条件（2023年12月28日）
+
+国立国語研究所
+
+１．現代雑誌200万字言語調査の語彙表データの著作権は、国立国語研究所に帰属します。 
+２．現代雑誌200万字言語調査の語彙表データは、クリエイティブ・コモンズ 表示 4.0 国際 ライセンス（CC BY）で提供します。
+https://creativecommons.org/licenses/by/4.0/deed.ja
+https://creativecommons.org/licenses/by/4.0/
+
+以上

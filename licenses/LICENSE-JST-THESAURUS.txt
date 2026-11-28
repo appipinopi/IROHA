@@ -1,0 +1,12 @@
+JST SCIENCE AND TECHNOLOGY TERMS MORPHOLOGICAL ANALYSIS DICTIONARY
+
+The selected headwords and synonym data in this distribution are adapted from the JST Thesaurus (2015 version) MeCab-format dataset published by the Bioscience Database Center (NBDC), Japan Science and Technology Agency (JST). The upstream NBDC README states that the dataset is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) and requires the following credit:
+
+"科学技術用語形態素解析辞書 © バイオサイエンスデータベースセンター licensed under CC表示-継承4.0 国際"
+
+The official NBDC README snapshot is included at source/jst-thesaurus/NBDC-README.html. The CC BY-SA 4.0 legal code is included at licenses/CC-BY-SA-4.0-LEGALCODE.txt. Source archive: https://dbarchive.biosciencedbc.jp/data/mecab/LATEST/mecab_thesaurus.zip
+
+IROHA selected primary headwords, a narrowly filtered kana-synonym subset, and selected sahen lemmas. Regular suru forms were generated with IROHA-local rules. Source context IDs, source costs, and source tags are not included in dictionary rows. Per-row lineage and source fields are kept separately in JST-ATTRIBUTION.tsv; the candidate/audit materials are in source-audit/jst/.
+The upstream NBDC README also states that the dictionary entries are based on the IPA dictionary. To preserve this provenance, the complete IPADIC upstream COPYING text is retained at licenses/LICENSE-IPADIC.txt; this does not replace NBDC's required CC BY-SA 4.0 credit and terms above.
+
+This notice does not replace the upstream license or the full CC BY-SA 4.0 legal code. Preserve the required credit and license terms in redistribution. NBDC/JST does not endorse this IROHA distribution.
