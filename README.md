@@ -8,7 +8,7 @@ IROHAは、Mozc・UniDic由来の語彙やMozcへの実行時依存を使わな�
 - [辞書一式ZIP（約483 MB）をダウンロード](https://github.com/appipinopi/IROHA/releases/download/v2026-11-28/IROHA-dictionary-2026-11-28-local-verified-7054954.zip)
 - [ZIP内のREADMEを単独で読む](https://github.com/appipinopi/IROHA/releases/download/v2026-11-28/README.md)
 
-辞書のTSV・SQLiteはRelease ZIPに収録されています。GitHubのファイル一覧にTSVシャードが個別表示されないのは、ソースコードと配布データを分けているためです。ZIP内の `tsv/` にある16個のTSVファイルが辞書本体です。
+TSVシャード16個（全7,054,954行、合計約399 MB）は、[GitHubの `tsv/` ディレクトリ](https://github.com/appipinopi/IROHA/tree/main/tsv)にも個別ファイルとして公開しています（Release ZIP内の同名ファイルと同一です）。SQLiteはRelease ZIPに収録されています。
 
 Release ZIPには、TSV・SQLiteのほか、元データ、出典別の帰属表、ライセンス資料、生成コード、再生成手順をまとめています。各データの採用条件とライセンスはZIP内READMEおよび同梱文書を確認してください。
 

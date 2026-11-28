@@ -4,6 +4,8 @@ sources/
 build/
 work/
 *.tsv
+# Keep the published dictionary shards visible in the repository.
+!/tsv/*.tsv
 *.sqlite
 *.sqlite3
 *.db
